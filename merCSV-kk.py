@@ -3,7 +3,9 @@
 import os
 import sys
 import pandas as pd
+###针对表结构相同的n个表格，根据指定的列编号（第i列），将所有表格的第i列横向合并成新的csv，每列的列名为该列所在原文件的名称
 
+#指定输入数据路径、列编号、输出路径
 filePath = str(sys.argv[1])
 col = int(sys.argv[2])
 desFile = filePath+str(sys.argv[3])
